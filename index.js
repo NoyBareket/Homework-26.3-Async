@@ -27,9 +27,13 @@ async function handleSearch() {
     console.log("ERROR");
 
     swal({
+      class: "swal-modal",
       title: "Something went wrong!",
       text: "Movie not found",
       icon: "error",
+      button: {
+        text: "Close",
+      },
     });
   } finally {
     DOM.movieNameInput.value = "";
