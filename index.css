@@ -1,0 +1,94 @@
+@font-face {
+  font-family: some;
+  src: url(undeveloped.book-regular.ttf);
+}
+body {
+  color: white;
+  background-color: black;
+}
+h1 {
+  font-family: some;
+  color: orange;
+  text-align: center;
+  font-size: 120px;
+  padding: 2%;
+}
+.btn {
+  transition: 0.5s;
+  background-color: orange;
+}
+.btn:hover {
+  background-color: orange;
+}
+.searchInput {
+  color: white;
+  background-color: rgb(26, 25, 25);
+}
+.searchInput::placeholder {
+  color: white;
+}
+.searchInput {
+  font-size: 20px;
+  margin-left: 1%;
+  width: 30%;
+  height: 40px;
+  margin-bottom: 1%;
+  border-radius: 10px;
+}
+
+#buttons {
+  margin-left: 35px;
+}
+
+#loader {
+  font-size: 30px;
+  color: orange;
+  text-align: center;
+}
+#loader2 {
+  
+  padding: 2px;
+  text-align: center;
+  margin: auto auto !important;
+  position: absolute;
+}
+#contents {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+.postDiv {
+  width: 250px;
+  text-align: center;
+  border-radius: 30px;
+  margin-left: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-top: 1%;
+  padding-top: 1%;
+  background-color: rgb(26, 25, 25);
+}
+
+
+.movieImg {
+  align-items: center;
+  padding: 2%;
+  border-radius: 40px;
+}
+
+.movieNameH5:hover {
+  border-bottom: 1px solid orange;
+  cursor: pointer;
+}
+.mainDiv {
+  width: 100%;
+  background-color: rgb(26, 25, 25);
+  border-radius: 30px;
+  margin-left: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}

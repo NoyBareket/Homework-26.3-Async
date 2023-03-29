@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Noy Cinema</h1>
+    <div class="container">
+      <form id="createMovieForm">
+        <div class="form-group , searchInputDiv">
+          <label for="exampleInputEmail1"> <i class="bi bi-search"></i></label>
+          <input
+            type="text"
+            id="movieName"
+            class="searchInput"
+            name="movieName"
+            aria-describedby="movieName"
+            placeholder="Enter Your Movie Name"
+          />
+        </div>
+
+        <div id="buttons">
+          <button id="searchMovie" type="button" class="btn mt-2">
+            Search Movies
+          </button>
+          <button id="clearButton" type="button" class="btn mt-2">Clear</button>
+        </div>
+      </form>
+      <div class="middelDiv">
+        <div id="loader"></div>
+        <br />
+        <div id="contents"></div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <script src="ui-components/img.js"></script>
+    <script src="ui-components/loader.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
