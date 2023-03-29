@@ -71,6 +71,9 @@ h1 {
   padding-top: 1%;
   background-color: rgb(26, 25, 25);
 }
+.plotDiv {
+  margin-left: 3%;
+}
 
 .movieImg {
   align-items: center;
@@ -97,4 +100,3 @@ h1 {
 .swal-modal {
   background-color: rgb(139, 136, 136);
 }
-
