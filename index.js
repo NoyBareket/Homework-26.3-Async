@@ -27,10 +27,12 @@ async function handleSearch() {
     console.log("ERROR");
 
     swal({
-      class: "swal-modal",
+    
       title: "Something went wrong!",
       text: "Movie not found",
       icon: "error",
+      cancelButtonColor: "red",
+      confirmButtonColor: "red",
       button: { text: "Close" },
     });
   } finally {

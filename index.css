@@ -75,6 +75,26 @@ h1 {
   margin-left: 3%;
 }
 
+.swal-button {
+  padding: 7px 19px;
+  border-radius: 2px;
+  background-color: rgb(26, 25, 25) !important;
+  font-size: 12px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+}
+.swal-title {
+  color: white;
+}
+.swal-text {
+  color: white;
+}
+.swal-modal {
+  background-color: rgb(45, 44, 44);
+  border-radius: 15px;
+}
+
 .movieImg {
   align-items: center;
   padding: 2%;
@@ -96,7 +116,4 @@ h1 {
   margin-bottom: 1%;
   padding-bottom: 1%;
   padding-top: 1%;
-}
-.swal-modal {
-  background-color: rgb(139, 136, 136);
 }
