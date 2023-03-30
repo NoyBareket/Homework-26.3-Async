@@ -28,6 +28,7 @@ h1 {
   color: white;
 }
 .searchInput:active {
+  margin-left: 2% !important;
   color: white;
   background-color: rgb(26, 25, 25);
 }
@@ -75,6 +76,7 @@ h1 {
   margin-left: 3%;
   /* background-color: azure; */
   width: 50vw;
+  margin-top: 1%;
 }
 
 .swal-button {
@@ -126,6 +128,5 @@ h1 {
   height: 60px;
 }
 .buttonDiv {
-  /* background-color: aquamarine; */
   align-self: center;
 }
