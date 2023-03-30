@@ -27,7 +27,6 @@ async function handleSearch() {
     console.log("ERROR");
 
     swal({
-    
       title: "Something went wrong!",
       text: "Movie not found",
       icon: "error",
@@ -100,8 +99,21 @@ function drawMoviesPlot(name, year, picture, genre, rating, time) {
   const timee = document.createElement("p");
   timee.innerText = time;
   plotDiv.append(movieName, date, genree, ratingg, time);
-
-  div.append(imgDiv, plotDiv);
+  //
+  const buttonDiv = document.createElement("div");
+  buttonDiv.classList.add("buttonDiv");
+  const button = document.createElement("button");
+  button.classList.add("btn", "btn-secondary");
+  button.innerText = "Back";
+  button.id = "backButton";
+  button.addEventListener("click", function () {
+    div.innerHTML = "";
+    div.classList.remove("mainDiv");
+    handleSearch();
+  });
+  buttonDiv.append(button);
+  //
+  div.append(imgDiv, plotDiv, buttonDiv);
   DOM.contents.append(div);
 }
 async function getMovieName(title) {
