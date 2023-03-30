@@ -35,7 +35,6 @@ async function handleSearch() {
       button: { text: "Close" },
     });
   } finally {
-    DOM.movieNameInput.value = "";
     removeLoader();
   }
 }
@@ -103,7 +102,7 @@ function drawMoviesPlot(name, year, picture, genre, rating, time) {
   const buttonDiv = document.createElement("div");
   buttonDiv.classList.add("buttonDiv");
   const button = document.createElement("button");
-  button.classList.add("btn", "btn-secondary");
+  button.classList.add("btn", "btn-secondary", "backButton");
   button.innerText = "Back";
   button.id = "backButton";
   button.addEventListener("click", function () {
