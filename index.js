@@ -103,7 +103,7 @@ function drawMoviesPlot(name, year, picture, genre, rating, time) {
   buttonDiv.classList.add("buttonDiv");
   const button = document.createElement("button");
   button.classList.add("btn", "btn-secondary", "backButton");
-  button.innerText = "Back";
+  button.innerText = `Back to ${DOM.movieNameInput.value} search`;
   button.id = "backButton";
   button.addEventListener("click", function () {
     div.innerHTML = "";
