@@ -27,6 +27,7 @@ h1 {
 .searchInput::placeholder {
   color: white;
 }
+
 .searchInput:active {
   margin-left: 2% !important;
   color: white;
